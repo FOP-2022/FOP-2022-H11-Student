@@ -11,6 +11,9 @@ public class Main {
      * @param args program arguments, currently ignored
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        "Hello world!\n"
+            .chars()
+            .mapToObj(i -> (char) i)
+            .forEach(System.out::print);
     }
 }
